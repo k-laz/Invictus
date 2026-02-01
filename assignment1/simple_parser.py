@@ -1,10 +1,6 @@
 """
-Assignment 1: Simple Financial Note Parser
-A deterministic parser that matches the provided expected output for note 1
+Assignment 1: Sample Financial Note Parser
 
-Key idea
-Work with character spans on the original paragraph text, then emit inline Tag elements
-This avoids quote normalization and avoids the common re.sub nesting problems
 """
 
 import re

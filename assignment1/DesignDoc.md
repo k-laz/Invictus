@@ -26,8 +26,6 @@ For this note, subsection classification is deterministic:
 - Blocks 15–17: Nature of operations and principal activities
 - Blocks 18–19: Going concern uncertainties
 
-This approach ensures a stable structure that exactly matches the expected output for the provided input.
-
 ---
 
 ## Input Normalization
@@ -100,6 +98,4 @@ No additional formatting or content is introduced.
 
 ## Rationale for a Rule-Based Approach
 
-A rule-based system was chosen over probabilistic or LLM-based approaches to guarantee deterministic output and exact span boundaries. Financial reporting pipelines require precision and reproducibility, and even minor variation in tagged output can invalidate downstream processing.
-
-This design emphasizes explainability and auditability, which are critical properties in regulated financial contexts.
+A rule-based system was chosen over probabilistic or LLM-based approaches to guarantee deterministic output and exact span boundaries.

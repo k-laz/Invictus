@@ -30,7 +30,6 @@ A full-stack web application for managing company profiles and generating struct
 ### Prerequisites
 
 - **Python 3.11+** (Python 3.11, 3.12, or 3.13 recommended; check with `python3 --version`)
-  - Note: If using Python 3.13, ensure you have the latest package versions (already included in requirements.txt)
 - **Node.js 16+** and **npm** (check with `node --version` and `npm --version`)
 
 ### Backend Setup
@@ -68,8 +67,6 @@ A full-stack web application for managing company profiles and generating struct
 
    The API will be available at `http://localhost:8000`
 
-   - API Documentation: `http://localhost:8000/docs` (Swagger UI)
-   - Alternative docs: `http://localhost:8000/redoc`
 
 ### Frontend Setup
 
@@ -102,19 +99,6 @@ A full-stack web application for managing company profiles and generating struct
 3. **Edit Company**: Click the edit icon (✏️) next to a company or select it and click "Edit"
 4. **Delete Company**: Click the delete icon (🗑️) next to a company
 5. **View Details**: Click on a company to view its full profile
-
-### Generating Output
-
-1. Select a company from the list
-2. Click "Generate Output" button
-3. Fill in the dynamic inputs form:
-   - **Company Name**: Optional override (defaults to profile name)
-   - **Quarter**: Select Q1, Q2, Q3, Q4, or FY
-   - **Fiscal Year**: Enter a year (1900-2100)
-   - **Reporting Period**: Free text field
-   - **Additional Notes**: Any extra information
-4. Click "Generate Output" to create the structured JSON
-5. Click "Download JSON" to save the file
 
 ### API Endpoints
 

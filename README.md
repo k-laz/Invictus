@@ -1,2 +1,0 @@
-# Invictus
-take-home

@@ -1,0 +1,71 @@
+.company-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.company-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f8f9fa;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.company-item:hover {
+  background: #e9ecef;
+  transform: translateX(4px);
+}
+
+.company-item.selected {
+  background: #e7f3ff;
+  border-color: #667eea;
+}
+
+.company-item-content {
+  flex: 1;
+}
+
+.company-item-content h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.company-meta {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.company-item-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.btn-icon:hover {
+  opacity: 1;
+}
+
+.btn-icon-danger:hover {
+  filter: brightness(0.8);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+}

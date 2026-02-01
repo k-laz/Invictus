@@ -1,0 +1,90 @@
+.dynamic-input-form {
+  animation: fadeIn 0.3s;
+}
+
+.form-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.form-header h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.form-subtitle strong {
+  color: #667eea;
+}
+
+.dynamic-input-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dynamic-input-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dynamic-input-form .form-group label {
+  font-weight: 600;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.dynamic-input-form .form-group input,
+.dynamic-input-form .form-group select,
+.dynamic-input-form .form-group textarea {
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.dynamic-input-form .form-group input:focus,
+.dynamic-input-form .form-group select:focus,
+.dynamic-input-form .form-group textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.dynamic-input-form .form-group input.error,
+.dynamic-input-form .form-group select.error {
+  border-color: #dc3545;
+}
+
+.dynamic-input-form .form-group small {
+  color: #999;
+  font-size: 0.85rem;
+  margin-top: -0.25rem;
+}
+
+.dynamic-input-form .form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.dynamic-input-form .form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.dynamic-input-form .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #f0f0f0;
+}

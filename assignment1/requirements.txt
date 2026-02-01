@@ -1,0 +1,8 @@
+# Core dependencies (required)
+# Note: The prototype uses only Python standard library (xml.etree.ElementTree, re)
+# No external dependencies are required for basic functionality
+
+# Optional dependencies for enhanced functionality:
+# spacy==3.7.2  # For Named Entity Recognition (optional - see DESIGN_DOCUMENT.md)
+# lxml==5.1.0   # Alternative XML parser (optional - standard library works fine)
+# regex==2023.12.25  # Advanced regex features (optional)

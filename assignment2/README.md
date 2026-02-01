@@ -126,14 +126,6 @@ A full-stack web application for managing company profiles and generating struct
 - `POST /api/companies/{id}/generate-output` - Generate output with dynamic inputs
 - `GET /api/companies/{id}/download-json` - Download company JSON file
 
-## Sample Data
-
-The database is pre-seeded with 3 sample companies:
-
-- **Acme Corporation** (New York, NY)
-- **TechStart LLC** (San Francisco, CA)
-- **Global Manufacturing Inc.** (Chicago, IL)
-
 ## Validation Rules
 
 ### Company Profile
@@ -184,34 +176,4 @@ The generated JSON output includes:
 }
 ```
 
-## Troubleshooting
 
-### Backend Issues
-
-- **Port already in use**: Change the port in the uvicorn command: `--port 8001`
-- **Database errors**: Delete `company_profiles.db` and run `seed_data.py` again
-- **Import errors**: Make sure you're in the backend directory and virtual environment is activated
-
-### Frontend Issues
-
-- **Cannot connect to API**: Ensure the backend is running on port 8000
-- **CORS errors**: Check that the backend CORS middleware includes your frontend URL
-- **Build errors**: Delete `node_modules` and run `npm install` again
-
-## Development Notes
-
-- The backend uses SQLite for simplicity (no database server required)
-- CORS is configured to allow requests from common React dev server ports
-- All API endpoints include proper error handling and validation
-- The frontend includes client-side validation for better UX
-- JSON output is formatted for easy reading and downstream processing
-
-## Next Steps
-
-For production deployment, consider:
-
-- Using PostgreSQL or another production database
-- Adding authentication/authorization
-- Implementing pagination for large company lists
-- Adding unit and integration tests
-- Setting up CI/CD pipeline
